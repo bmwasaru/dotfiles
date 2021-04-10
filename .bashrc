@@ -13,9 +13,12 @@ alias freeze="pip freeze > requirements.txt"
 alias secret="openssl rand -base64 32"
 alias reds="redis-server"
 alias redc="redis-client"
-complete -C /usr/local/bin/vault vault
-source /Users/zero/perl5/perlbrew/etc/bashrc
 
+complete -C /usr/local/bin/vault vault
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 alias config='/usr/bin/git --git-dir=/Users/zero/.cfg/ --work-tree=/Users/zero'
+
+alias start-apue='VBoxManage startvm "apue" --type headless'
+
+alias upstream="git fetch upstream && git merge upstream/master master && git rebase upstream/master"
