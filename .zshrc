@@ -2,7 +2,7 @@
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-alias python="python3.8"
+alias python="python3"
 alias gs="git status"
 alias ga="git add"
 alias gp="git pull"
